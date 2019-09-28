@@ -1,11 +1,12 @@
 import React from "react";
 import "./style.css"
+import "../counter/Counter"
 
-function WhiskeyCard(props) {
+const WhiskeyCard = (props) => {
     return (
-        <div className="card">
+        <div className="card" onClick={() => props.counter(props.id)}>
             <div className="img-container">
-                <img alt={props.id} src={props.image} />
+                <img alt={props.name} src={props.image} />
             </div>
             <div className="content">
 

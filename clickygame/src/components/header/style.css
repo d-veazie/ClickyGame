@@ -1,7 +1,14 @@
 .jumbotron {
     width: 100%;
     background-color: burlywood;
+    background-repeat: round;
     color: firebrick;
-    font-size: 69px;
+    font-size: 89px;
     font-family: fantasy;
+    text-align: center;
+    text-shadow: 5px 5px coral;
+}
+
+.card-text {
+    font-size: 36px;
 }
