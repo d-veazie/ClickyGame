@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {Component} from 'react';
+
 import './App.css';
-import Wrapper from "./components/wrapper"
-import WhiskeyCard from "./components/cards"
-import options from "../src/options.json"
+import Wrapper from "./components/wrapper/Wrapper";
+import WhiskeyCard from "./components/cards/Card";
+import options from "../src/options.json";
+import Header from "./components/header/Header";
 
 class App extends Component {
   state = {
@@ -12,9 +14,9 @@ class App extends Component {
   render() {
     return (
       <Wrapper>
-        <Title>F*ckin Whiskey</Title>
+        <Header>F*ckin Whiskey</Header>
         {this.state.options.map(options => (
-          <FriendCard
+          <WhiskeyCard
             id={options.id}
             image={options.image}
           />

@@ -8,11 +8,7 @@ function WhiskeyCard(props) {
                 <img alt={props.id} src={props.image} />
             </div>
             <div className="content">
-                <ul>
-                    <li>
 
-                    </li>
-                </ul>
             </div>
         </div>
     )

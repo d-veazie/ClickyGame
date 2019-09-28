@@ -2,9 +2,7 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-}
+
 
 .App-header {
   background-color: #282c34;
@@ -19,4 +17,9 @@
 
 .App-link {
   color: #09d3ac;
+}
+
+img {
+  width: 100px;
+  height: 100px;
 }
