@@ -17,18 +17,24 @@ class App extends Component {
     clicked: []
   }
 
-  // function gameOver() {
-  //   this.setState({
-  //     score: 0,
-  //     gameOver: true
+  gameOver = () => {
+    this.setState({
+      score: 0,
+      gameOver: true
 
-  //   })
-  // };
+    })
+  };
+
+  endAnimation = () => {
+    if (this.gameOver === true) {
+
+    }
+  }
 
   counter = id => {
 
     if(this.state.clicked.includes(id)) { 
-      // game over function
+      this.gameOver();
 
     } else {
       let arr = this.state.clicked;
@@ -40,7 +46,7 @@ class App extends Component {
       })
     }
 
-    console.log("function running")
+    console.log("i f*cked your mom")
 
     
   }
